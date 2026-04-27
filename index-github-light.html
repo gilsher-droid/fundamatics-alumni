@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alumni — FUNDAMATICS</title>
+<style>
+:root {
+  --blue:#4D9DFF;
+  --blue2:#2F7EEA;
+  --violet:#7F5CFF;
+  --yellow:#FFD35A;
+  --card:rgba(255,255,255,.95);
+  --text:#0B1B2B;
+  --muted:rgba(11,27,43,.74);
+  --shadow:0 20px 44px rgba(11,27,43,.24);
+  --radius:24px;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  background:
+    radial-gradient(900px 420px at 80% 10%,rgba(255,255,255,.28),transparent 58%),
+    radial-gradient(620px 340px at 18% 0%,rgba(255,211,90,.20),transparent 55%),
+    linear-gradient(135deg,var(--blue),var(--blue2) 58%,var(--violet));
+  color:var(--text);
+  min-height:100vh;
+}
+header {
+  max-width:1240px;
+  margin:0 auto;
+  padding:34px 24px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+.brand { display:flex; align-items:center; gap:18px; }
+.logo {
+  width:90px; height:90px; border-radius:26px; overflow:hidden;
+  box-shadow:0 14px 32px rgba(11,27,43,.25);
+  background:#fff;
+  flex:0 0 auto;
+}
+.logo img { width:100%; height:100%; object-fit:cover; display:block; }
+.titles h1 { margin:0; font-size:40px; color:#fff; letter-spacing:.2px; }
+.titles p { margin:8px 0 0; color:#fff; opacity:.94; font-size:16px; }
+.badge {
+  color:#fff;
+  border:1px solid rgba(255,255,255,.44);
+  background:rgba(255,255,255,.14);
+  border-radius:999px;
+  padding:10px 16px;
+  font-size:14px;
+  backdrop-filter: blur(8px);
+  white-space:nowrap;
+}
+main { max-width:1240px; margin:0 auto; padding:8px 24px 70px; }
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+.card {
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.75);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.card:hover { transform:translateY(-4px); box-shadow:0 26px 54px rgba(11,27,43,.30); }
+.photo-wrap {
+  height:318px;
+  background:linear-gradient(135deg,#EAF5FF,#FFFFFF);
+  overflow:hidden;
+}
+.photo-wrap img { width:100%; height:100%; object-fit:cover; display:block; }
+.placeholder {
+  width:100%; height:100%;
+  align-items:center; justify-content:center;
+  font-size:62px; font-weight:800; color:#2F7EEA;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255,211,90,.40), transparent 35%),
+    linear-gradient(135deg,#eef8ff,#ffffff);
+}
+.content { padding:18px 18px 20px; }
+h2 { margin:0 0 10px; font-size:20px; line-height:1.2; }
+p { margin:0 0 7px; font-size:14px; line-height:1.58; color:var(--muted); }
+.footer { margin-top:36px; color:#fff; opacity:.88; text-align:center; font-size:13px; }
+@media (max-width:700px) {
+  header { align-items:flex-start; flex-direction:column; }
+  .titles h1 { font-size:30px; }
+  .badge { white-space:normal; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">
+      <img src="assets/images/logo.jpeg" alt="FUNDAMATICS logo" onerror="this.style.display='none';">
+    </div>
+    <div class="titles">
+      <h1>Alumni — FUNDAMATICS</h1>
+      <p>קהילת הבוגרים והבוגרות</p>
+    </div>
+  </div>
+  <div class="badge">15 Alumni Profiles</div>
+</header>
+
+<main>
+  <section class="grid">
+    
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/daniela-pick.jpg" alt="דניאלה פיק" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">דפ</div>
+  </div>
+  <div class="content">
+    <h2>דניאלה פיק</h2>
+    <p>תלמידת עבר במסגרת FUNDAMATICS.</p><p>זמרת ויוצרת עצמאית.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/inbal-proiss.jpg" alt="ענבל פרויס" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">עפ</div>
+  </div>
+  <div class="content">
+    <h2>ענבל פרויס</h2>
+    <p>תלמידת עבר במסגרת FUNDAMATICS.</p><p>חוקרת במדעי המחשב.</p><p>נבחרה לרשימת Forbes 30 Under 30.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/matan-bichler.jpg" alt="מתן ביכלר" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">מב</div>
+  </div>
+  <div class="content">
+    <h2>מתן ביכלר</h2>
+    <p>תלמיד עבר במסגרת FUNDAMATICS.</p><p>עוסק בתחומי Go-To-Market וניהול עסקי.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/tomer-hammer.jpg" alt="תומר האמר" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">תה</div>
+  </div>
+  <div class="content">
+    <h2>תומר האמר</h2>
+    <p>תלמיד עבר במסגרת FUNDAMATICS.</p><p>למד מתמטיקה ברמת 5 יחידות לימוד בבית הספר התיכון בליך, רמת גן.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/ido-rivlin.jpg" alt="עידו ריבלין" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">ער</div>
+  </div>
+  <div class="content">
+    <h2>עידו ריבלין</h2>
+    <p>תלמיד עבר במסגרת FUNDAMATICS.</p><p>למד מתמטיקה ברמת 5 יחידות לימוד בבית הספר התיכון בליך, רמת גן.</p><p>סטודנט באוניברסיטת בר-אילן.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/ron-rivlin.jpg" alt="רון ריבלין" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">רר</div>
+  </div>
+  <div class="content">
+    <h2>רון ריבלין</h2>
+    <p>תלמיד עבר במסגרת FUNDAMATICS.</p><p>למד מתמטיקה ברמת 5 יחידות לימוד בבית הספר התיכון בליך, רמת גן.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/eyal-rotbart.jpg" alt="אייל רוטברט" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">אר</div>
+  </div>
+  <div class="content">
+    <h2>אייל רוטברט</h2>
+    <p>תלמיד עבר במסגרת FUNDAMATICS.</p><p>מנהל מוצר.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/hilla-lev-ari.jpg" alt="הילה לב ארי (אקרמן)" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">הל</div>
+  </div>
+  <div class="content">
+    <h2>הילה לב ארי (אקרמן)</h2>
+    <p>תלמידת עבר במסגרת FUNDAMATICS.</p><p>עצמאית.</p><p>מתגוררת בגיברלטר עם בעלה וילדיהם.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/itay-blustein.jpg" alt="איתי בלושטיין" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">אב</div>
+  </div>
+  <div class="content">
+    <h2>איתי בלושטיין</h2>
+    <p>תלמיד עבר במסגרת FUNDAMATICS.</p><p>עובד כיום ב-ARO.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/tom-marmarelli.jpg" alt="Tom Marmarelli" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">TM</div>
+  </div>
+  <div class="content">
+    <h2>Tom Marmarelli</h2>
+    <p>תלמיד עבר במסגרת FUNDAMATICS.</p><p>ספורטאי סבולת ומאמן.</p><p>בוגר Columbia Business School.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/eden-boaron.png" alt="עדן בוארון" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">עב</div>
+  </div>
+  <div class="content">
+    <h2>עדן בוארון</h2>
+    <p>תלמידת עבר במסגרת FUNDAMATICS.</p><p>למדה מתמטיקה ברמת 5 יחידות לימוד.</p><p>בית הספר התיכון בליך, רמת גן.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/yotam-ben-yehuda.png" alt="יותם בן יהודה" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">יב</div>
+  </div>
+  <div class="content">
+    <h2>יותם בן יהודה</h2>
+    <p>תלמיד עבר במסגרת FUNDAMATICS.</p><p>למד מתמטיקה ברמת 5 יחידות לימוד.</p><p>בית הספר התיכון בליך, רמת גן.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/shirel-bichler.png" alt="שיראל ביכלר" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">שב</div>
+  </div>
+  <div class="content">
+    <h2>שיראל ביכלר</h2>
+    <p>תלמידת עבר במסגרת FUNDAMATICS.</p><p>ליווי והכנה לפסיכומטרי.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/maya-li-cieutat.png" alt="מאיה-לי סיוטאט" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">מס</div>
+  </div>
+  <div class="content">
+    <h2>מאיה-לי סיוטאט</h2>
+    <p>תלמידת עבר במסגרת FUNDAMATICS.</p><p>למדה בבית הספר הבינלאומי בכפר הירוק.</p><p>תכנית IB – SL AI.</p><p>זמרת-יוצרת וכותבת צעירה בזירה עיתונאית בינלאומית.</p>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo-wrap">
+    <img src="assets/images/idit-meir.png" alt="עידית מאיר" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">עמ</div>
+  </div>
+  <div class="content">
+    <h2>עידית מאיר</h2>
+    <p>בוגרת FUNDAMATICS.</p><p>במקור מקיבוץ ניר אליהו.</p><p>מתגוררת כיום בווייטנאם עם בעלה וארבעת בניהם.</p><p>משלבת בין משפחה, יזמות והתפתחות אישית.</p><p>הופיעה בפודקאסטים ושיתפה בגישה האישית והאותנטית שלה לחיים.</p>
+  </div>
+</article>
+
+  </section>
+  <div class="footer">GitHub Pages version · images are loaded from assets/images</div>
+</main>
+</body>
+</html>
